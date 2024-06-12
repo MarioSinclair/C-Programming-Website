@@ -1,0 +1,119 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+    font-family: Trebuchet MS;
+  }
+}
+
+.container{
+  width: 70%;
+  margin-left: 310px;
+  margin-right: 1000px;
+  padding: 20px;
+  font-size: 1.15rem;
+  z-index: -1;
+}
+
+code{
+  background-color: whitesmoke;
+  font-family: monospace;
+  border-radius: 5px;
+  display: block;
+  width: 500px;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+
+#navbar{
+  margin-left: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid black;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: white;
+}
+
+header#top{
+  font-size: 1.3rem;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+header{
+
+}
+
+a.nav-link{
+  text-decoration: none;
+  font-size: 1.15rem;
+  padding: 15px;
+  background-color: whitesmoke;
+  border-bottom: 1px solid black;
+}
+
+a.nav-link:first-of-type{
+  border-top: 1px solid black;
+}
+
+a.nav-link{
+  color: black;
+}
+
+a.nav-link:visited{
+  color: black;
+}
+
+a.nav-link:hover{
+  color: grey;
+}
+
+a{
+  display: block;
+}
+
+img{
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+
+li{
+  padding: 10px;
+  line-height: 30px;
+}
+
+li.none{
+  padding: 0;
+}
+
+p{
+  line-height: 30px;
+  margin-bottom: -2px;
+}
+
+header{
+  font-size: 1.4rem;
+}
+
+header.header2{
+  font-size: 1.15rem;
+}
+
+footer{
+  width: 100vw;
+  min-width: 1200px;
+  background-color: grey;
+  margin-bottom: -30px;
+  margin-left: -40px;
+  padding: 20px;
+  text-align: center;
+  display: block;
+  overflow-x: hidden;
+}

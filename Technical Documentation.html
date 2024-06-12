@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="techstyles.css">
+      <title>Basic Coding in C</title>
+      <body>
+      <nav id="navbar">
+            <header id="top">Basic Coding in C</header>
+            <a href="#Data_Types" class="nav-link">Data Types</a>
+            <a href="#Variables" class="nav-link">Variables</a>
+            <a href="#Operations" class="nav-link">Operations</a>
+            <a href="#Data_Structures" class="nav-link">Data Structures</a>
+            <a href="#Files" class="nav-link">Files</a>
+          </nav>
+        <main id="main-doc">
+          <div class="container">
+            <section id="Data_Types" class="main-section">
+              <header>Data Types</header>
+              <p>A variable is a user-defined or a user-readable custom name assigned to a memory location.</p>
+              <p>Data Types in C:</p>
+                <ul>
+                  <li>Integers (int) - stores integers (whole numbers), without decimals.</li>
+                  <code>int num1 = 10;</code>
+                  <li>Float (float) - stores floating point numbers, with decimals</li>
+                  <code>float num2 = 10.1;</code>
+                  <li>Characters (char) - stores single characters</li>
+                  <code>char letter = a</code>
+                  <li>Double (double) - stores floating point numbers, with decimals and double the amount of characters as a float data type</li>
+                  <code>char letter = a</code>
+                </ul> 
+            </section>
+                        <section id="Variables" class="main-section">
+              <header>Variables</header>
+              <p>Types of variables:</p>
+                <ol>
+                  <li>Local Variables - Variables that are declared inside the functions with the keyword local are called local variables. The local variable's scope is inside the function in which it is declared. 
+                  <li>Global Variables - 
+                    Variables that are declared outside the functions with the keyword global are called global variables and can be accessed by multiple functions defined in the program.</li>
+                  <li>Static Variables - Variables declared with a keyword static are static variables, whose lifetime is throughout the program run time.</li>
+                </ol>
+            </section>
+            <section id="Operations" class="main-section">
+              <header>Operations</header>
+              <ul>
+                <li class="none"><p>The "printf" operation is used to print an output onto the screen.</p></li>
+                <code>printf("Hello World");</code>
+                <li class="none"><p>The "scanf" operation is used to read an input from the user.</p></li>
+                <code>printf("Enter an number");</code>
+                <code>scanf("%d", num);</code>                
+              </ul>
+            </section>
+            <section id="Data_Structures" class="main-section">
+              <header>Data Structures</header>
+              <p>A data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently. There are a multitude of data structures that can be developed in C however, the main structures that will be focused on are arrays, stacks, queues and linked lists.</p>
+                <header class="header2">Arrays</header>
+                  <ul>
+                  <li>An array is a collection of items stored at contiguous memory locations. The idea is to store multiple items of the same type together. This makes it easier to calculate the position of each element by simply adding an offset to a base value, i.e., the memory location of the first element of the array (generally denoted by the name of the array).</li>
+                  <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230726162247/Array-data-structure.png">
+                  </ul>
+                  <header class="header2">Stacks</header>
+                  <ul>
+                  <li>Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out). LIFO implies that the element that is inserted last, comes out first and FILO implies that the element that is inserted first, comes out last.</li>
+                  <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230726165552/Stack-Data-Structure.png">
+                  </ul>
+                  <header class="header2">Queues</header>
+                  <ul>     
+                  <li>A Queue is defined as a linear data structure that is open at both ends and the operations are performed in First In First Out (FIFO) order.</li>
+                  <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230726165642/Queue-Data-structure1.png">
+                  </ul>
+                  <header class="header2">Linked Lists</header>
+                  <ul>
+                  <li>A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. A linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.</li>
+                  <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230726162542/Linked-List-Data-Structure.png">
+                  </ul>    
+            </section>
+            <section id="Files" class="main-section">
+              <header>Files</header>
+              <p>File handing in C is the process in which we create, open, read, write, and close operations on a file.</p>
+                <ul>
+                  <li>For opening a file in C, the fopen() function is used with the filename or file path along with the required access modes.</li>
+                  <code>fptr = fopen("fileopen","mode");</code>
+               
+              <p>File opening modes or access modes specify the allowed operations on the file to be opened. Some of these modes include:</p>
+              <ul>
+              <li>r - Open for reading.</li>
+              <li>a - Open for append and data is added to the end of the file</li>
+              <li>w - Open for writing and overwrites existing content</li>
+              </ul>
+              <li>For reading a file in C, the fscanf()function is used with formatted string and variable arguments list to take input from a file.</li>
+              <code>fscanf(fptr, "%d" &year);</code>
+              <li>For writing to a file in C, othe function fprintf() can be used with formatted string and varible arguments list to print output to the file.</li>
+                <code>fprintf(fptr, "%d", 1);</code>
+                <li>The fclose() function is used to close the file to remove it from the memory.</li>
+                <code>fclose(fptr);</code>
+               </ul>
+            </section>
+          </div>             
+        </main>
+      </body>
+        <footer><i>Code is like humor. When you have to explain it, it’s bad. – Cory House</i></footer>
+        
+  </html>
